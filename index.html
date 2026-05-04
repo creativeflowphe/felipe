@@ -978,112 +978,14 @@ ul.lst li::before{content:'—';color:var(--muted);flex-shrink:0}
   </div>
 </div>
 
-<!-- S14: DESCOBERTA 4 - SEGURANÇA VENEZA -->
+<!-- S16: DESCOBERTA 5 - O PARQUE NA ERA DA IA -->
 <div class="slide" id="s14">
   <div class="box">
-    <div class="tag" style="background:rgba(230,57,70,0.1);color:var(--red);border-color:rgba(230,57,70,0.2)">Descoberta 04 / 05 — Segurança Veneza</div>
-    <div class="split" style="align-items:start;gap:40px">
-      <div>
-        <h2 style="margin-bottom:10px">O site da contabilidade está <span style="color:var(--red)">exposto.</span></h2>
-        <p class="sub" style="margin-bottom:20px">Nossa varredura de infraestrutura (Matrix Audit V2) detectou a ausência das principais políticas de segurança modernas. O domínio venezacontabilidade.com.br opera desprotegido contra interceptação e ataques automatizados.</p>
-        <div style="display:flex;flex-direction:column;gap:10px">
-          <div class="card" style="border-left:3px solid var(--red);padding:14px 18px">
-            <span class="badge crit" style="margin-bottom:6px">Risco Crítico LGPD</span>
-            <div class="ctitle" style="font-size:13px">Ausência de Content Security Policy (CSP)</div>
-            <div class="cbody" style="font-size:11px">Permite a execução de scripts maliciosos injetados (XSS) sem restrições. Para um escritório contábil, isso expõe dados sensíveis dos clientes a sequestro.</div>
-          </div>
-          <div class="card" style="border-left:3px solid var(--red);padding:14px 18px">
-            <span class="badge crit" style="margin-bottom:6px">Vulnerabilidade de Formulários</span>
-            <div class="ctitle" style="font-size:13px">Ausência de Anti-CSRF (Busca e Newsletter)</div>
-            <div class="cbody" style="font-size:11px">Os formulários não possuem tokens de proteção. Atacantes podem forçar submissões massivas (SPAM/Phishing) diretamente pelo seu servidor.</div>
-          </div>
-          <div class="card" style="border-left:3px solid #ffaa00;padding:14px 18px">
-            <span class="badge warn" style="margin-bottom:6px">Brecha de Infraestrutura</span>
-            <div class="ctitle" style="font-size:13px">Falta de HSTS e X-Frame-Options</div>
-            <div class="cbody" style="font-size:11px">Não força conexão segura (risco MITM) e permite que o site seja clonado e embutido em sites falsos para roubo de credenciais.</div>
-          </div>
-        </div>
-      </div>
-      <div class="scan" style="border-color:rgba(230,57,70,0.3)">
-        <div style="color:rgba(255,255,255,0.35);font-size:10px;letter-spacing:1px;text-transform:uppercase;margin-bottom:14px;padding-bottom:10px;border-bottom:1px solid rgba(255,255,255,0.08)">MATRIX PENTEST — venezacontabilidade.com.br</div>
-        <div class="sl e">Content-Security-Policy: INEXISTENTE</div>
-        <div class="sl e">Strict-Transport-Security: INEXISTENTE</div>
-        <div class="sl e">X-Frame-Options: INEXISTENTE</div>
-        <div class="sl e">X-Content-Type-Options: INEXISTENTE</div>
-        <div class="sl w">Formulários: SEM PROTEÇÃO CSRF</div>
-        <div class="sl w">Bibliotecas Legadas: IDENTIFICADAS (jQuery, Cycle2)</div>
-        <div class="sl e">Subresource Integrity (SRI): AUSENTE</div>
-        <div class="sl w">Information Disclosure: Server Apache exposto</div>
-        <div style="margin-top:24px;padding-top:14px;border-top:1px dashed rgba(230,57,70,0.4)">
-          <div style="color:var(--red);font-size:11px;font-weight:700;letter-spacing:1px;text-transform:uppercase">Status Executivo: ALERTA VERMELHO</div>
-          <div style="color:rgba(255,255,255,0.5);font-size:11px;margin-top:6px;line-height:1.5">A infraestrutura e base de código são antigas. A superfície de ataque atual representa um passivo jurídico inaceitável para uma empresa de contabilidade.</div>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-
-<!-- S15: PENTEST VENEZA DETALHADO -->
-<div class="slide" id="s15">
-  <div class="box" style="background:linear-gradient(135deg,#1a1a1a,#0d0d0d);border:1px solid rgba(230,57,70,0.3);color:#fff">
-    <div class="tag" style="background:rgba(230,57,70,0.15);color:var(--red);border-color:rgba(230,57,70,0.3)">Diagnóstico de Risco Crítico</div>
-    <div class="split" style="align-items:center;gap:40px">
-      <div>
-        <h2 style="color:#fff;margin-bottom:12px">O Passivo Oculto da <span style="color:var(--red)">Veneza Contabilidade</span></h2>
-        <div style="display:flex;align-items:center;gap:8px;margin-bottom:16px;background:rgba(255,255,255,0.05);padding:6px 12px;border-radius:6px;width:fit-content;border:1px solid rgba(255,255,255,0.1)">
-          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="var(--cyan)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><line x1="2" y1="12" x2="22" y2="12"></line><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path></svg>
-          <span style="font-size:12px;color:rgba(255,255,255,0.8);font-family:monospace">Alvo: venezacontabilidade.com.br</span>
-        </div>
-        <p class="sub" style="color:rgba(255,255,255,0.6);margin-bottom:24px">As vulnerabilidades detectadas não são apenas falhas técnicas — são <strong>riscos jurídicos e financeiros diretos</strong> sob a ótica da LGPD.</p>
-        
-        <div style="display:flex;flex-direction:column;gap:12px">
-          <div class="card" style="background:rgba(255,255,255,0.03);border:1px solid rgba(255,255,255,0.08);border-left:3px solid var(--red);padding:16px 20px">
-            <span class="badge crit" style="background:rgba(230,57,70,0.2);margin-bottom:8px">Alta Gravidade</span>
-            <div class="ctitle" style="color:#fff;font-size:14px">Cross-Site Scripting (XSS)</div>
-            <div class="cbody" style="color:rgba(255,255,255,0.55);font-size:12px">A ausência de CSP permite que hackers injetem scripts maliciosos no site da contabilidade, podendo roubar sessões e dados de clientes que acessam a área restrita.</div>
-          </div>
-          <div class="card" style="background:rgba(255,255,255,0.03);border:1px solid rgba(255,255,255,0.08);border-left:3px solid var(--red);padding:16px 20px">
-            <span class="badge crit" style="background:rgba(230,57,70,0.2);margin-bottom:8px">Alta Gravidade</span>
-            <div class="ctitle" style="color:#fff;font-size:14px">Cross-Site Request Forgery (CSRF)</div>
-            <div class="cbody" style="color:rgba(255,255,255,0.55);font-size:12px">Falta de tokens de validação em formulários. Um cibercriminoso pode forçar ações em nome do usuário autenticado sem que ele perceba.</div>
-          </div>
-          <div class="card" style="background:rgba(255,255,255,0.03);border:1px solid rgba(255,255,255,0.08);border-left:3px solid #ffaa00;padding:16px 20px">
-            <span class="badge warn" style="background:rgba(255,170,0,0.15);color:#ffaa00;margin-bottom:8px">Quebra de Autoridade</span>
-            <div class="ctitle" style="color:#fff;font-size:14px">Terceirização Exposta (Falta de Whitelabel)</div>
-            <div class="cbody" style="color:rgba(255,255,255,0.55);font-size:12px">O botão de login redireciona para um painel genérico de terceiros (midiasistema.com). Isso destrói a percepção de segurança institucional do cliente, que deveria acessar um portal exclusivo (ex: painel.venezacontabilidade.com.br).</div>
-          </div>
-          <div class="card" style="background:rgba(255,255,255,0.03);border:1px solid rgba(255,255,255,0.08);border-left:3px solid #ffaa00;padding:16px 20px">
-            <span class="badge warn" style="background:rgba(255,170,0,0.15);color:#ffaa00;margin-bottom:8px">Exposição Severa</span>
-            <div class="ctitle" style="color:#fff;font-size:14px">Exposição da Stack (PHP)</div>
-            <div class="cbody" style="color:rgba(255,255,255,0.55);font-size:12px">O servidor revela sua assinatura e versão exata do PHP. Hackers utilizam essa "impressão digital" para lançar ataques automatizados direcionados a falhas conhecidas.</div>
-          </div>
-        </div>
-      </div>
-      
-      <div class="card" style="background:#111;border:1px solid rgba(230,57,70,0.4);padding:24px;text-align:center">
-        <div style="width:56px;height:56px;background:rgba(230,57,70,0.1);border-radius:12px;display:flex;align-items:center;justify-content:center;margin:0 auto 16px">
-          <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="var(--red)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg>
-        </div>
-        <div style="font-size:18px;font-weight:700;color:#fff;margin-bottom:8px">Custo da Negligência</div>
-        <p style="font-size:12px;color:rgba(255,255,255,0.5);line-height:1.6;margin-bottom:20px">A LGPD penaliza severamente empresas que mantêm infraestruturas vulneráveis. Para um escritório contábil, um vazamento representa perda imediata de confiança e risco de processo civil.</p>
-        
-        <div style="background:rgba(255,255,255,0.04);border:1px dashed rgba(230,57,70,0.5);border-radius:6px;padding:12px">
-          <div style="font-size:10px;font-weight:700;color:var(--red);text-transform:uppercase;letter-spacing:1px;margin-bottom:4px">Nossa Solução (Matrix OS)</div>
-          <div style="font-size:11px;color:rgba(255,255,255,0.7)">Nossos agentes de segurança implantam blindagem militar, removendo fingerprints do servidor, bloqueando XSS com CSP estrita e validando formulários contra bots e CSRF.</div>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-
-<!-- S16: DESCOBERTA 5 - O PARQUE NA ERA DA IA -->
-<div class="slide" id="s16">
-  <div class="box" style="background:linear-gradient(135deg,#1a1a1a,#0d0d0d);border:1px solid rgba(255,255,255,0.06);color:#fff">
-    <div class="tag" style="background:rgba(255,255,255,0.05);color:rgba(255,255,255,0.8);border-color:rgba(255,255,255,0.1)">Descoberta 05 / 05</div>
+    <div class="tag">Descoberta 05 / 05</div>
     <div style="display:flex;justify-content:space-between;align-items:flex-start;margin-bottom:18px;gap:40px">
       <div>
-        <h2 style="color:#fff;margin-bottom:8px">O Parque Oschin tem <span class="ac">oportunidades invisíveis</span> esperando.</h2>
-        <p class="sub" style="color:rgba(255,255,255,0.6);font-size:13px">Um parque de lazer gera experiências. Mas a maioria dos visitantes em potencial <strong style="color:#fff">nunca chega a conhecer o parque</strong> — porque a jornada de descoberta digital ainda não foi otimizada para a era da IA.</p>
+        <h2 style="margin-bottom:8px">O Parque Oschin tem <span class="ac">oportunidades invisíveis</span> esperando.</h2>
+        <p class="sub" style="font-size:13px">Um parque de lazer gera experiências. Mas a maioria dos visitantes em potencial <strong>nunca chega a conhecer o parque</strong> — porque a jornada de descoberta digital ainda não foi otimizada para a era da IA.</p>
       </div>
     </div>
 
@@ -1091,28 +993,28 @@ ul.lst li::before{content:'—';color:var(--muted);flex-shrink:0}
       <!-- Coluna esquerda: gargalos identificados -->
       <div style="display:flex;flex-direction:column;gap:12px">
 
-        <div class="card" style="background:rgba(255,255,255,0.03);border:1px solid rgba(255,255,255,0.08);border-left:3px solid var(--red);padding:16px">
-          <span class="badge crit" style="background:rgba(230,57,70,0.2)">Impacto Alto</span>
-          <div class="ctitle" style="color:#fff;font-size:13px">Visitantes que buscam e não encontram</div>
-          <div class="cbody" style="color:rgba(255,255,255,0.55);font-size:12px">Quando alguém pesquisa <em>"o que fazer em Monte Verde"</em> via IA, o Parque Oschin <strong style="color:#fff">não é mencionado</strong>. Esse visitante vai para o concorrente — sem saber que o parque existe.</div>
+        <div class="card" style="border-left:3px solid var(--red);padding:16px">
+          <span class="badge crit">Impacto Alto</span>
+          <div class="ctitle" style="font-size:13px">Visitantes que buscam e não encontram</div>
+          <div class="cbody" style="font-size:12px">Quando alguém pesquisa <em>"o que fazer em Monte Verde"</em> via IA, o Parque Oschin <strong>não é mencionado</strong>. Esse visitante vai para o concorrente — sem saber que o parque existe.</div>
         </div>
 
-        <div class="card" style="background:rgba(255,255,255,0.03);border:1px solid rgba(255,255,255,0.08);border-left:3px solid var(--red);padding:16px">
-          <span class="badge crit" style="background:rgba(230,57,70,0.2)">Impacto Alto</span>
-          <div class="ctitle" style="color:#fff;font-size:13px">Reservas perdidas por falta de CTA</div>
-          <div class="cbody" style="color:rgba(255,255,255,0.55);font-size:12px">Visitantes chegam ao site com intenção de visitar. Sem um botão de reserva claro na entrada, <strong style="color:#fff">o interesse evapora</strong> — e o parque perde receita sem nem perceber.</div>
+        <div class="card" style="border-left:3px solid var(--red);padding:16px">
+          <span class="badge crit">Impacto Alto</span>
+          <div class="ctitle" style="font-size:13px">Reservas perdidas por falta de CTA</div>
+          <div class="cbody" style="font-size:12px">Visitantes chegam ao site com intenção de visitar. Sem um botão de reserva claro na entrada, <strong>o interesse evapora</strong> — e o parque perde receita sem nem perceber.</div>
         </div>
 
-        <div class="card" style="background:rgba(255,255,255,0.03);border:1px solid rgba(255,255,255,0.08);border-left:3px solid #ffaa00;padding:16px">
-          <span class="badge warn" style="background:rgba(255,170,0,0.15);color:#ffaa00">Impacto Médio</span>
-          <div class="ctitle" style="color:#fff;font-size:13px">Instagram sem estratégia de crescimento</div>
-          <div class="cbody" style="color:rgba(255,255,255,0.55);font-size:12px">O perfil existe, mas sem frequência, conteúdo de atração e copy com gatilho. <strong style="color:#fff">Cada post sem estratégia</strong> é uma oportunidade de alcance orgânico desperdiçada.</div>
+        <div class="card" style="border-left:3px solid #ffaa00;padding:16px">
+          <span class="badge warn">Impacto Médio</span>
+          <div class="ctitle" style="font-size:13px">Instagram sem estratégia de crescimento</div>
+          <div class="cbody" style="font-size:12px">O perfil existe, mas sem frequência, conteúdo de atração e copy com gatilho. <strong>Cada post sem estratégia</strong> é uma oportunidade de alcance orgânico desperdiçada.</div>
         </div>
 
       </div>
 
       <!-- Coluna direita: painel de potencial -->
-      <div class="card" style="background:linear-gradient(135deg,#0d1a1a,#0a1111);border:1px solid rgba(0,138,139,0.2);padding:26px">
+      <div class="card" style="background:var(--dark);border:none;padding:26px">
         <div style="font-size:10px;font-weight:700;letter-spacing:1.5px;text-transform:uppercase;color:var(--teal);margin-bottom:18px">Potencial estimado — com IA ativa</div>
 
         <div style="display:flex;flex-direction:column;gap:14px">
@@ -1155,138 +1057,367 @@ ul.lst li::before{content:'—';color:var(--muted);flex-shrink:0}
   </div>
 </div>
 
-<!-- S17: MATRIZ DE COMPLIANCE -->
+<!-- S15: INTRO AUDITORIA DE SEGURANÇA & PENTEST -->
+<div class="slide" id="s15">
+  <div class="box" style="background:linear-gradient(135deg,#111,#0d0d0d);border:1px solid rgba(255,255,255,0.06);align-items:center;justify-content:center;text-align:center">
+    <div style="display:inline-flex;align-items:center;background:var(--red);color:#fff;font-size:10px;font-weight:700;letter-spacing:2px;text-transform:uppercase;padding:7px 18px;border-radius:20px;margin-bottom:32px">
+      <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2.5" style="margin-right:8px"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+      Matrix Security Protocol
+    </div>
+    <h1 style="font-size:clamp(36px,5vw,64px);font-weight:800;color:#fff;line-height:1.1;letter-spacing:-2px;margin-bottom:20px">Auditoria Real de<br>Segurança &amp; Pentest</h1>
+    <p style="font-size:16px;color:rgba(255,255,255,0.5);line-height:1.75;max-width:580px;margin:0 auto 44px">Análise técnica de vulnerabilidades OWASP, testes de penetração e conformidade LGPD. Varredura real executada na infraestrutura digital da contabilidade.</p>
+    <div style="background:#1a1a1a;border:1px solid rgba(230,57,70,0.25);border-radius:10px;padding:0;max-width:480px;width:100%;margin:0 auto;overflow:hidden">
+      <div style="padding:12px 16px;border-bottom:1px solid rgba(255,255,255,0.06);display:flex;gap:6px;align-items:center">
+        <div style="width:10px;height:10px;border-radius:50%;background:var(--red)"></div>
+        <div style="width:10px;height:10px;border-radius:50%;background:#ffaa00"></div>
+        <div style="width:10px;height:10px;border-radius:50%;background:#333"></div>
+        <span style="margin-left:auto;font-size:9px;color:rgba(255,255,255,0.2);letter-spacing:1px;text-transform:uppercase;font-family:monospace">pentester://scan</span>
+      </div>
+      <div style="padding:28px 32px;text-align:center">
+        <div style="font-size:10px;font-weight:700;letter-spacing:2px;text-transform:uppercase;color:rgba(255,255,255,0.3);margin-bottom:12px">Alvo da Auditoria</div>
+        <div style="font-size:18px;font-weight:600;color:var(--red);letter-spacing:0.5px">venezacontabilidade.com.br</div>
+        <div style="margin-top:14px;display:flex;justify-content:center;gap:24px">
+          <div style="text-align:center"><div style="font-size:9px;color:rgba(255,255,255,0.25);letter-spacing:1px;text-transform:uppercase;margin-bottom:4px">Tipo</div><div style="font-size:11px;color:rgba(255,255,255,0.6);font-weight:600">Black Box</div></div>
+          <div style="width:1px;height:28px;background:rgba(255,255,255,0.08)"></div>
+          <div style="text-align:center"><div style="font-size:9px;color:rgba(255,255,255,0.25);letter-spacing:1px;text-transform:uppercase;margin-bottom:4px">Escopo</div><div style="font-size:11px;color:rgba(255,255,255,0.6);font-weight:600">Web + Servidor</div></div>
+          <div style="width:1px;height:28px;background:rgba(255,255,255,0.08)"></div>
+          <div style="text-align:center"><div style="font-size:9px;color:rgba(255,255,255,0.25);letter-spacing:1px;text-transform:uppercase;margin-bottom:4px">Framework</div><div style="font-size:11px;color:rgba(255,255,255,0.6);font-weight:600">OWASP Top 10</div></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- S16: AUDITORIA DE SEGURANÇA — VENEZA -->
+<div class="slide" id="s16">
+  <div class="box" style="background:linear-gradient(135deg,#0f0f0f,#1a1a1a,#0d0d0d);border:1px solid rgba(230,57,70,0.25);color:#fff;padding:36px 48px">
+    <div style="display:flex;align-items:flex-start;justify-content:space-between;margin-bottom:24px">
+      <div style="flex:1">
+        <div class="tag" style="background:rgba(230,57,70,0.12);color:var(--red);border-color:rgba(230,57,70,0.3);margin-bottom:14px">Auditoria de Segurança — Site Institucional</div>
+        <h2 style="color:#fff;margin-bottom:8px;font-size:clamp(20px,2.2vw,26px)">O site da contabilidade está <span style="color:var(--red)">exposto.</span></h2>
+        <p style="color:rgba(255,255,255,0.5);font-size:13px;line-height:1.5;max-width:520px;margin:0">Matrix Audit V2 detectou ausência das principais políticas de segurança modernas. O domínio opera desprotegido contra interceptação e ataques automatizados.</p>
+      </div>
+      <div style="background:rgba(230,57,70,0.06);border:1px solid rgba(230,57,70,0.25);border-radius:14px;padding:18px 24px;text-align:center;min-width:140px">
+        <div style="font-size:10px;font-weight:700;letter-spacing:1.5px;text-transform:uppercase;color:rgba(255,255,255,0.35);margin-bottom:8px">Nível de Risco</div>
+        <div style="font-size:36px;font-weight:800;color:var(--red);letter-spacing:-2px;line-height:1">9.1</div>
+        <div style="font-size:10px;color:rgba(255,255,255,0.3);margin-top:4px">/ 10 — Severo</div>
+        <div style="margin-top:10px;height:4px;background:rgba(255,255,255,0.08);border-radius:2px;overflow:hidden"><div style="width:91%;height:100%;background:linear-gradient(90deg,#ffaa00,var(--red));border-radius:2px"></div></div>
+      </div>
+    </div>
+    <div style="display:flex;align-items:center;gap:10px;margin-bottom:22px;background:rgba(255,255,255,0.03);padding:8px 16px;border-radius:8px;border:1px solid rgba(255,255,255,0.06)">
+      <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="var(--cyan)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
+      <span style="font-size:12px;color:rgba(255,255,255,0.7);font-family:monospace">Alvo auditado: venezacontabilidade.com.br</span>
+      <span style="margin-left:auto;font-size:10px;color:rgba(255,255,255,0.3);letter-spacing:1px;text-transform:uppercase">Site institucional</span>
+    </div>
+    <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin-bottom:18px">
+      <div style="background:rgba(255,255,255,0.025);border:1px solid rgba(255,255,255,0.07);border-radius:10px;padding:18px 16px;position:relative;overflow:hidden">
+        <div style="position:absolute;top:0;left:0;right:0;height:3px;background:linear-gradient(90deg,var(--red),rgba(230,57,70,0.3))"></div>
+        <div style="display:flex;align-items:center;gap:8px;margin-bottom:12px">
+          <div style="width:32px;height:32px;background:rgba(230,57,70,0.1);border-radius:8px;display:flex;align-items:center;justify-content:center;flex-shrink:0"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="var(--red)" stroke-width="2"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/></svg></div>
+          <span class="badge crit" style="background:rgba(230,57,70,0.15);font-size:9px;padding:3px 7px">CRÍTICO</span>
+        </div>
+        <div style="font-size:13px;font-weight:700;color:#fff;margin-bottom:6px">Sem CSP (XSS Aberto)</div>
+        <div style="font-size:11px;color:rgba(255,255,255,0.45);line-height:1.5">Scripts maliciosos podem ser injetados sem restrição. Dados sensíveis de clientes expostos a sequestro.</div>
+      </div>
+      <div style="background:rgba(255,255,255,0.025);border:1px solid rgba(255,255,255,0.07);border-radius:10px;padding:18px 16px;position:relative;overflow:hidden">
+        <div style="position:absolute;top:0;left:0;right:0;height:3px;background:linear-gradient(90deg,var(--red),rgba(230,57,70,0.3))"></div>
+        <div style="display:flex;align-items:center;gap:8px;margin-bottom:12px">
+          <div style="width:32px;height:32px;background:rgba(230,57,70,0.1);border-radius:8px;display:flex;align-items:center;justify-content:center;flex-shrink:0"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="var(--red)" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><line x1="9" y1="9" x2="15" y2="15"/><line x1="15" y1="9" x2="9" y2="15"/></svg></div>
+          <span class="badge crit" style="background:rgba(230,57,70,0.15);font-size:9px;padding:3px 7px">CRÍTICO</span>
+        </div>
+        <div style="font-size:13px;font-weight:700;color:#fff;margin-bottom:6px">Formulários Sem CSRF</div>
+        <div style="font-size:11px;color:rgba(255,255,255,0.45);line-height:1.5">Sem tokens de proteção. Submissões massivas de SPAM e Phishing podem ser forçadas pelo servidor.</div>
+      </div>
+      <div style="background:rgba(255,255,255,0.025);border:1px solid rgba(255,255,255,0.07);border-radius:10px;padding:18px 16px;position:relative;overflow:hidden">
+        <div style="position:absolute;top:0;left:0;right:0;height:3px;background:linear-gradient(90deg,#ffaa00,rgba(255,170,0,0.3))"></div>
+        <div style="display:flex;align-items:center;gap:8px;margin-bottom:12px">
+          <div style="width:32px;height:32px;background:rgba(255,170,0,0.1);border-radius:8px;display:flex;align-items:center;justify-content:center;flex-shrink:0"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#ffaa00" stroke-width="2"><rect x="2" y="3" width="20" height="14" rx="2" ry="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg></div>
+          <span class="badge warn" style="background:rgba(255,170,0,0.12);color:#ffaa00;font-size:9px;padding:3px 7px">MÉDIO</span>
+        </div>
+        <div style="font-size:13px;font-weight:700;color:#fff;margin-bottom:6px">HSTS + Clickjacking</div>
+        <div style="font-size:11px;color:rgba(255,255,255,0.45);line-height:1.5">Sem HTTPS forçado (MITM) e sem X-Frame-Options. Site pode ser clonado em iframes falsos.</div>
+      </div>
+    </div>
+    <div style="background:rgba(255,255,255,0.02);border:1px solid rgba(255,255,255,0.06);border-radius:10px;padding:16px 22px">
+      <div style="display:flex;align-items:center;gap:8px;margin-bottom:12px">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="rgba(255,255,255,0.4)" stroke-width="2"><polyline points="4 17 10 11 4 5"/><line x1="12" y1="19" x2="20" y2="19"/></svg>
+        <span style="font-size:10px;font-weight:700;letter-spacing:1.5px;text-transform:uppercase;color:rgba(255,255,255,0.35)">Matrix Pentest — Scan de Headers</span>
+      </div>
+      <div style="display:grid;grid-template-columns:1fr 1fr;gap:6px 24px">
+        <div style="display:flex;justify-content:space-between;padding:5px 0;border-bottom:1px solid rgba(255,255,255,0.04)"><span style="font-size:11px;color:rgba(255,255,255,0.5);font-family:monospace">Content-Security-Policy</span><span style="font-size:10px;color:var(--red);font-weight:700">✕ AUSENTE</span></div>
+        <div style="display:flex;justify-content:space-between;padding:5px 0;border-bottom:1px solid rgba(255,255,255,0.04)"><span style="font-size:11px;color:rgba(255,255,255,0.5);font-family:monospace">Strict-Transport-Security</span><span style="font-size:10px;color:var(--red);font-weight:700">✕ AUSENTE</span></div>
+        <div style="display:flex;justify-content:space-between;padding:5px 0;border-bottom:1px solid rgba(255,255,255,0.04)"><span style="font-size:11px;color:rgba(255,255,255,0.5);font-family:monospace">X-Frame-Options</span><span style="font-size:10px;color:var(--red);font-weight:700">✕ AUSENTE</span></div>
+        <div style="display:flex;justify-content:space-between;padding:5px 0;border-bottom:1px solid rgba(255,255,255,0.04)"><span style="font-size:11px;color:rgba(255,255,255,0.5);font-family:monospace">X-Content-Type-Options</span><span style="font-size:10px;color:var(--red);font-weight:700">✕ AUSENTE</span></div>
+        <div style="display:flex;justify-content:space-between;padding:5px 0;border-bottom:1px solid rgba(255,255,255,0.04)"><span style="font-size:11px;color:rgba(255,255,255,0.5);font-family:monospace">Subresource Integrity (SRI)</span><span style="font-size:10px;color:var(--red);font-weight:700">✕ AUSENTE</span></div>
+        <div style="display:flex;justify-content:space-between;padding:5px 0;border-bottom:1px solid rgba(255,255,255,0.04)"><span style="font-size:11px;color:rgba(255,255,255,0.5);font-family:monospace">Anti-CSRF Tokens</span><span style="font-size:10px;color:#ffaa00;font-weight:700">⚠ FALHA</span></div>
+        <div style="display:flex;justify-content:space-between;padding:5px 0;border-bottom:1px solid rgba(255,255,255,0.04)"><span style="font-size:11px;color:rgba(255,255,255,0.5);font-family:monospace">Bibliotecas Legadas</span><span style="font-size:10px;color:#ffaa00;font-weight:700">⚠ jQuery/Cycle2</span></div>
+        <div style="display:flex;justify-content:space-between;padding:5px 0;border-bottom:1px solid rgba(255,255,255,0.04)"><span style="font-size:11px;color:rgba(255,255,255,0.5);font-family:monospace">Server Fingerprint</span><span style="font-size:10px;color:#ffaa00;font-weight:700">⚠ Apache exposto</span></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- S17: PENTEST VENEZA — DIAGNÓSTICO DETALHADO -->
 <div class="slide" id="s17">
-  <div class="box" style="background:linear-gradient(135deg,#1a1a1a,#0d0d0d);border:1px solid rgba(230,57,70,0.3);color:#fff">
-    <div class="tag" style="background:rgba(230,57,70,0.15);color:var(--red);border-color:rgba(230,57,70,0.3)">Matriz de Compliance de Segurança</div>
-    <div style="display:flex;flex-direction:column;height:100%;justify-content:center">
-      <h2 style="color:#fff;margin-bottom:12px">Auditoria Técnica Completa</h2>
-      <div style="display:flex;align-items:center;gap:8px;margin-bottom:16px;background:rgba(255,255,255,0.05);padding:6px 12px;border-radius:6px;width:fit-content;border:1px solid rgba(255,255,255,0.1)">
-        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="var(--cyan)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><line x1="2" y1="12" x2="22" y2="12"></line><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path></svg>
-        <span style="font-size:12px;color:rgba(255,255,255,0.8);font-family:monospace">Alvo auditado: venezacontabilidade.com.br</span>
+  <div class="box" style="background:linear-gradient(135deg,#0f0f0f,#1a1a1a,#0d0d0d);border:1px solid rgba(230,57,70,0.25);color:#fff;padding:36px 48px">
+    <div style="display:flex;align-items:flex-start;justify-content:space-between;margin-bottom:24px">
+      <div style="flex:1">
+        <div class="tag" style="background:rgba(230,57,70,0.12);color:var(--red);border-color:rgba(230,57,70,0.3);margin-bottom:14px">Diagnóstico de Risco — Passivo LGPD</div>
+        <h2 style="color:#fff;margin-bottom:8px;font-size:clamp(20px,2.2vw,26px)">O Passivo Oculto da <span style="color:var(--red)">Veneza Contabilidade</span></h2>
+        <p style="color:rgba(255,255,255,0.5);font-size:13px;line-height:1.5;max-width:520px;margin:0">As vulnerabilidades detectadas não são apenas falhas técnicas — são <strong style="color:rgba(255,255,255,0.75)">riscos jurídicos e financeiros diretos</strong> sob a ótica da LGPD.</p>
       </div>
-      <p class="sub" style="color:rgba(255,255,255,0.6);margin-bottom:32px">Resultado consolidado das avaliações de segurança de infraestrutura e aplicação.</p>
-      
-      <div style="display:grid;grid-template-columns:1fr 1fr;gap:24px">
-        
-        <!-- Reprovados -->
-        <div style="background:rgba(230,57,70,0.05);border:1px solid rgba(230,57,70,0.2);border-radius:12px;padding:24px">
-          <div style="display:flex;align-items:center;gap:10px;margin-bottom:20px">
-            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="var(--red)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><line x1="15" y1="9" x2="9" y2="15"></line><line x1="9" y1="9" x2="15" y2="15"></line></svg>
-            <h3 style="color:var(--red);font-size:16px;margin:0">Testes Reprovados (Risco Crítico)</h3>
-          </div>
-          
-          <div style="display:flex;flex-direction:column;gap:14px">
-            <div style="display:flex;justify-content:space-between;align-items:center;border-bottom:1px solid rgba(255,255,255,0.05);padding-bottom:10px">
-              <span style="font-size:13px;color:#fff">Content Security Policy (CSP) Headers</span>
-              <span class="badge crit" style="background:rgba(230,57,70,0.2);font-size:10px;padding:4px 8px">FALHOU</span>
-            </div>
-            <div style="display:flex;justify-content:space-between;align-items:center;border-bottom:1px solid rgba(255,255,255,0.05);padding-bottom:10px">
-              <span style="font-size:13px;color:#fff">Anti-CSRF Tokens em Formulários</span>
-              <span class="badge crit" style="background:rgba(230,57,70,0.2);font-size:10px;padding:4px 8px">FALHOU</span>
-            </div>
-            <div style="display:flex;justify-content:space-between;align-items:center;border-bottom:1px solid rgba(255,255,255,0.05);padding-bottom:10px">
-              <span style="font-size:13px;color:#fff">Ocultação de Stack/Versão (PHP Exposure)</span>
-              <span class="badge crit" style="background:rgba(230,57,70,0.2);font-size:10px;padding:4px 8px">FALHOU</span>
-            </div>
-            <div style="display:flex;justify-content:space-between;align-items:center;border-bottom:1px solid rgba(255,255,255,0.05);padding-bottom:10px">
-              <span style="font-size:13px;color:#fff">Proteção Clickjacking (X-Frame-Options)</span>
-              <span class="badge crit" style="background:rgba(230,57,70,0.2);font-size:10px;padding:4px 8px">FALHOU</span>
-            </div>
-            <div style="display:flex;justify-content:space-between;align-items:center;border-bottom:1px solid rgba(255,255,255,0.05);padding-bottom:10px">
-              <span style="font-size:13px;color:#fff">Isolamento de Marca (Domínio Whitelabel)</span>
-              <span class="badge crit" style="background:rgba(230,57,70,0.2);font-size:10px;padding:4px 8px">FALHOU</span>
-            </div>
-            <div style="display:flex;justify-content:space-between;align-items:center">
-              <span style="font-size:13px;color:#fff">Secure & HttpOnly Flags em Cookies</span>
-              <span class="badge crit" style="background:rgba(230,57,70,0.2);font-size:10px;padding:4px 8px">FALHOU</span>
-            </div>
-          </div>
+      <div style="background:rgba(230,57,70,0.06);border:1px solid rgba(230,57,70,0.25);border-radius:14px;padding:18px 24px;text-align:center;min-width:140px">
+        <div style="font-size:10px;font-weight:700;letter-spacing:1.5px;text-transform:uppercase;color:rgba(255,255,255,0.35);margin-bottom:8px">Passivo Jurídico</div>
+        <div style="font-size:36px;font-weight:800;color:var(--red);letter-spacing:-2px;line-height:1">ALTO</div>
+        <div style="font-size:10px;color:rgba(255,255,255,0.3);margin-top:4px">Multa LGPD aplicável</div>
+        <div style="margin-top:10px;height:4px;background:rgba(255,255,255,0.08);border-radius:2px;overflow:hidden"><div style="width:95%;height:100%;background:linear-gradient(90deg,#ffaa00,var(--red));border-radius:2px"></div></div>
+      </div>
+    </div>
+    <div style="display:flex;align-items:center;gap:10px;margin-bottom:22px;background:rgba(255,255,255,0.03);padding:8px 16px;border-radius:8px;border:1px solid rgba(255,255,255,0.06)">
+      <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="var(--cyan)" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
+      <span style="font-size:12px;color:rgba(255,255,255,0.7);font-family:monospace">Alvo auditado: venezacontabilidade.com.br</span>
+      <span style="margin-left:auto;font-size:10px;color:rgba(255,255,255,0.3);letter-spacing:1px;text-transform:uppercase">Vetores de ataque confirmados</span>
+    </div>
+    <div style="display:grid;grid-template-columns:repeat(4,1fr);gap:14px;margin-bottom:18px">
+      <div style="background:rgba(255,255,255,0.025);border:1px solid rgba(255,255,255,0.07);border-radius:10px;padding:18px 16px;position:relative;overflow:hidden">
+        <div style="position:absolute;top:0;left:0;right:0;height:3px;background:linear-gradient(90deg,var(--red),rgba(230,57,70,0.3))"></div>
+        <div style="display:flex;align-items:center;gap:8px;margin-bottom:12px">
+          <div style="width:32px;height:32px;background:rgba(230,57,70,0.1);border-radius:8px;display:flex;align-items:center;justify-content:center;flex-shrink:0"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="var(--red)" stroke-width="2"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/></svg></div>
+          <span class="badge crit" style="background:rgba(230,57,70,0.15);font-size:9px;padding:3px 7px">CRÍTICO</span>
         </div>
-
-        <!-- Aprovados -->
-        <div style="background:rgba(0,138,139,0.05);border:1px solid rgba(0,138,139,0.2);border-radius:12px;padding:24px">
-          <div style="display:flex;align-items:center;gap:10px;margin-bottom:20px">
-            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="var(--teal)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path><polyline points="22 4 12 14.01 9 11.01"></polyline></svg>
-            <h3 style="color:var(--teal);font-size:16px;margin:0">Testes Aprovados</h3>
-          </div>
-          
-          <div style="display:flex;flex-direction:column;gap:14px">
-            <div style="display:flex;justify-content:space-between;align-items:center;border-bottom:1px solid rgba(255,255,255,0.05);padding-bottom:10px">
-              <span style="font-size:13px;color:#fff">Criptografia de Transporte (HTTPS/SSL)</span>
-              <span class="badge" style="background:rgba(0,138,139,0.2);color:var(--teal);font-size:10px;padding:4px 8px;border:1px solid rgba(0,138,139,0.4)">PASSOU</span>
-            </div>
-            <div style="display:flex;justify-content:space-between;align-items:center;border-bottom:1px solid rgba(255,255,255,0.05);padding-bottom:10px">
-              <span style="font-size:13px;color:#fff">Validade do Certificado de Segurança</span>
-              <span class="badge" style="background:rgba(0,138,139,0.2);color:var(--teal);font-size:10px;padding:4px 8px;border:1px solid rgba(0,138,139,0.4)">PASSOU</span>
-            </div>
-            <div style="display:flex;justify-content:space-between;align-items:center">
-              <span style="font-size:13px;color:#fff">Bloqueio de Indexação de Diretórios</span>
-              <span class="badge" style="background:rgba(0,138,139,0.2);color:var(--teal);font-size:10px;padding:4px 8px;border:1px solid rgba(0,138,139,0.4)">PASSOU</span>
-            </div>
-          </div>
+        <div style="font-size:13px;font-weight:700;color:#fff;margin-bottom:6px;line-height:1.3">XSS (Cross-Site Scripting)</div>
+        <div style="font-size:11px;color:rgba(255,255,255,0.45);line-height:1.5">CSP ausente permite injeção de payloads. Risco de Session Hijacking e roubo de cookies de clientes logados.</div>
+      </div>
+      <div style="background:rgba(255,255,255,0.025);border:1px solid rgba(255,255,255,0.07);border-radius:10px;padding:18px 16px;position:relative;overflow:hidden">
+        <div style="position:absolute;top:0;left:0;right:0;height:3px;background:linear-gradient(90deg,var(--red),rgba(230,57,70,0.3))"></div>
+        <div style="display:flex;align-items:center;gap:8px;margin-bottom:12px">
+          <div style="width:32px;height:32px;background:rgba(230,57,70,0.1);border-radius:8px;display:flex;align-items:center;justify-content:center;flex-shrink:0"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="var(--red)" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><line x1="9" y1="9" x2="15" y2="15"/><line x1="15" y1="9" x2="9" y2="15"/></svg></div>
+          <span class="badge crit" style="background:rgba(230,57,70,0.15);font-size:9px;padding:3px 7px">CRÍTICO</span>
         </div>
-
+        <div style="font-size:13px;font-weight:700;color:#fff;margin-bottom:6px;line-height:1.3">CSRF (Request Forgery)</div>
+        <div style="font-size:11px;color:rgba(255,255,255,0.45);line-height:1.5">Sem tokens anti-CSRF. Vetores permitem forjar requisições autenticadas para Account Takeover invisível.</div>
+      </div>
+      <div style="background:rgba(255,255,255,0.025);border:1px solid rgba(255,255,255,0.07);border-radius:10px;padding:18px 16px;position:relative;overflow:hidden">
+        <div style="position:absolute;top:0;left:0;right:0;height:3px;background:linear-gradient(90deg,#ffaa00,rgba(255,170,0,0.3))"></div>
+        <div style="display:flex;align-items:center;gap:8px;margin-bottom:12px">
+          <div style="width:32px;height:32px;background:rgba(255,170,0,0.1);border-radius:8px;display:flex;align-items:center;justify-content:center;flex-shrink:0"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#ffaa00" stroke-width="2"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/><circle cx="12" cy="12" r="3"/></svg></div>
+          <span class="badge warn" style="background:rgba(255,170,0,0.12);color:#ffaa00;font-size:9px;padding:3px 7px">MÉDIO</span>
+        </div>
+        <div style="font-size:13px;font-weight:700;color:#fff;margin-bottom:6px;line-height:1.3">Trust Chain Quebrada</div>
+        <div style="font-size:11px;color:rgba(255,255,255,0.45);line-height:1.5">Login redireciona para painel genérico (midiasistema.com). Expõe clientes a Spoofing e Spear Phishing.</div>
+      </div>
+      <div style="background:rgba(255,255,255,0.025);border:1px solid rgba(255,255,255,0.07);border-radius:10px;padding:18px 16px;position:relative;overflow:hidden">
+        <div style="position:absolute;top:0;left:0;right:0;height:3px;background:linear-gradient(90deg,#ffaa00,rgba(255,170,0,0.3))"></div>
+        <div style="display:flex;align-items:center;gap:8px;margin-bottom:12px">
+          <div style="width:32px;height:32px;background:rgba(255,170,0,0.1);border-radius:8px;display:flex;align-items:center;justify-content:center;flex-shrink:0"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#ffaa00" stroke-width="2"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg></div>
+          <span class="badge warn" style="background:rgba(255,170,0,0.12);color:#ffaa00;font-size:9px;padding:3px 7px">MÉDIO</span>
+        </div>
+        <div style="font-size:13px;font-weight:700;color:#fff;margin-bottom:6px;line-height:1.3">PHP Fingerprint Exposto</div>
+        <div style="font-size:11px;color:rgba(255,255,255,0.45);line-height:1.5">Server Header vaza versão PHP. Facilita mapeamento via CVEs públicas, viabilizando RCE.</div>
+      </div>
+    </div>
+    <div style="display:grid;grid-template-columns:1fr 1fr;gap:16px">
+      <div style="background:rgba(230,57,70,0.04);border:1px solid rgba(230,57,70,0.2);border-radius:10px;padding:18px 22px;display:flex;gap:16px;align-items:center">
+        <div style="width:44px;height:44px;background:rgba(230,57,70,0.1);border-radius:10px;display:flex;align-items:center;justify-content:center;flex-shrink:0"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="var(--red)" stroke-width="2"><path d="M10.29 3.86L1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z"/><line x1="12" y1="9" x2="12" y2="13"/><line x1="12" y1="17" x2="12.01" y2="17"/></svg></div>
+        <div>
+          <div style="font-size:13px;font-weight:700;color:var(--red);margin-bottom:4px">Custo da Negligência</div>
+          <div style="font-size:11px;color:rgba(255,255,255,0.5);line-height:1.5">LGPD penaliza infraestruturas vulneráveis. Para escritório contábil, vazamento = <strong style="color:rgba(255,255,255,0.75)">perda de confiança + processo civil</strong>.</div>
+        </div>
+      </div>
+      <div style="background:rgba(0,138,139,0.04);border:1px solid rgba(0,138,139,0.2);border-radius:10px;padding:18px 22px;display:flex;gap:16px;align-items:center">
+        <div style="width:44px;height:44px;background:rgba(0,138,139,0.1);border-radius:10px;display:flex;align-items:center;justify-content:center;flex-shrink:0"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="var(--teal)" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><polyline points="9 12 11 14 15 10"/></svg></div>
+        <div>
+          <div style="font-size:13px;font-weight:700;color:var(--teal);margin-bottom:4px">Solução Matrix OS</div>
+          <div style="font-size:11px;color:rgba(255,255,255,0.5);line-height:1.5">Blindagem militar: <strong style="color:rgba(255,255,255,0.75)">CSP estrita, fingerprints removidos</strong>, formulários validados contra bots e CSRF.</div>
+        </div>
       </div>
     </div>
   </div>
 </div>
 
-<!-- S18: PENTEST ÁREA DO CLIENTE -->
+<!-- S18: MATRIZ DE COMPLIANCE -->
 <div class="slide" id="s18">
-  <div class="box" style="background:linear-gradient(135deg,#1a1a1a,#0d0d0d);border:1px solid rgba(230,57,70,0.3);color:#fff">
-    <div class="tag" style="background:rgba(230,57,70,0.15);color:var(--red);border-color:rgba(230,57,70,0.3)">Portal do Cliente: Risco Legal e LGPD</div>
-    <div class="split" style="align-items:center;gap:40px">
-      <div>
-        <h2 style="color:#fff;margin-bottom:12px">A Bomba-Relógio na <span style="color:var(--red)">Área do Cliente</span></h2>
-        <div style="display:flex;align-items:center;gap:8px;margin-bottom:16px;background:rgba(255,255,255,0.05);padding:6px 12px;border-radius:6px;width:fit-content;border:1px solid rgba(255,255,255,0.1)">
-          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="var(--cyan)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><line x1="2" y1="12" x2="22" y2="12"></line><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path></svg>
-          <span style="font-size:12px;color:rgba(255,255,255,0.8);font-family:monospace">Alvo: mpmsistema.com.br/cliente</span>
+  <div class="box" style="background:linear-gradient(135deg,#0f0f0f,#1a1a1a,#0d0d0d);border:1px solid rgba(230,57,70,0.25);color:#fff;padding:36px 48px">
+    <div style="display:flex;align-items:flex-start;justify-content:space-between;margin-bottom:24px">
+      <div style="flex:1">
+        <div class="tag" style="background:rgba(230,57,70,0.12);color:var(--red);border-color:rgba(230,57,70,0.3);margin-bottom:14px">Matriz de Compliance — Resultado Consolidado</div>
+        <h2 style="color:#fff;margin-bottom:8px;font-size:clamp(20px,2.2vw,26px)">Auditoria Técnica <span style="color:var(--red)">Completa</span></h2>
+        <p style="color:rgba(255,255,255,0.5);font-size:13px;line-height:1.5;max-width:520px;margin:0">Resultado consolidado das avaliações de segurança de infraestrutura e aplicação.</p>
+      </div>
+      <div style="background:rgba(230,57,70,0.06);border:1px solid rgba(230,57,70,0.25);border-radius:14px;padding:18px 24px;text-align:center;min-width:160px">
+        <div style="font-size:10px;font-weight:700;letter-spacing:1.5px;text-transform:uppercase;color:rgba(255,255,255,0.35);margin-bottom:8px">Score Geral</div>
+        <div style="display:flex;align-items:baseline;justify-content:center;gap:4px">
+          <span style="font-size:36px;font-weight:800;color:var(--red);letter-spacing:-2px;line-height:1">3</span>
+          <span style="font-size:16px;color:rgba(255,255,255,0.3);font-weight:600">/ 9</span>
         </div>
-        <p class="sub" style="color:rgba(255,255,255,0.6);margin-bottom:24px">Onde moram os dados contábeis confidenciais de terceiros. Falhas aqui resultam em multas severas e destruição de reputação institucional.</p>
-        
-        <div style="display:flex;flex-direction:column;gap:12px">
-          <div class="card" style="background:rgba(255,255,255,0.03);border:1px solid rgba(255,255,255,0.08);border-left:3px solid var(--red);padding:16px 20px">
-            <span class="badge crit" style="background:rgba(230,57,70,0.2);margin-bottom:8px">Alta Gravidade</span>
-            <div class="ctitle" style="color:#fff;font-size:14px">Ausência de Token Anti-CSRF</div>
-            <div class="cbody" style="color:rgba(255,255,255,0.55);font-size:12px">O formulário de login permite falsificação de requisições. Atacantes podem forçar ações em nome do cliente sem o seu conhecimento.</div>
-          </div>
-          <div class="card" style="background:rgba(255,255,255,0.03);border:1px solid rgba(255,255,255,0.08);border-left:3px solid var(--red);padding:16px 20px">
-            <span class="badge crit" style="background:rgba(230,57,70,0.2);margin-bottom:8px">Alta Gravidade</span>
-            <div class="ctitle" style="color:#fff;font-size:14px">Sem Proteção contra Força Bruta</div>
-            <div class="cbody" style="color:rgba(255,255,255,0.55);font-size:12px">A falta de Rate Limiting e de CAPTCHA abre a porta para ataques automatizados de teste de senhas (Credential Stuffing).</div>
-          </div>
-          <div class="card" style="background:rgba(255,255,255,0.03);border:1px solid rgba(255,255,255,0.08);border-left:3px solid #ffaa00;padding:16px 20px">
-            <span class="badge warn" style="background:rgba(255,170,0,0.15);color:#ffaa00;margin-bottom:8px">Risco Intermediário</span>
-            <div class="ctitle" style="color:#fff;font-size:14px">Sessão Insegura (Cookies) e Falta de CSP</div>
-            <div class="cbody" style="color:rgba(255,255,255,0.55);font-size:12px">Os cookies de sessão trafegam sem a obrigatoriedade do protocolo seguro. Também faltam headers de segurança básicos como CSP, permitindo possíveis XSS.</div>
-          </div>
-          <div class="card" style="background:rgba(255,255,255,0.03);border:1px solid rgba(255,255,255,0.08);border-left:3px solid #ffaa00;padding:16px 20px">
-            <span class="badge warn" style="background:rgba(255,170,0,0.15);color:#ffaa00;margin-bottom:8px">Risco Intermediário</span>
-            <div class="ctitle" style="color:#fff;font-size:14px">Clickjacking (Falta X-Frame-Options)</div>
-            <div class="cbody" style="color:rgba(255,255,255,0.55);font-size:12px">A página de login pode ser incorporada em iframes ocultos, enganando o cliente para que digite sua senha achando estar no site original.</div>
-          </div>
+        <div style="font-size:10px;color:rgba(255,255,255,0.3);margin-top:4px">Testes aprovados</div>
+        <div style="margin-top:10px;height:4px;background:rgba(255,255,255,0.08);border-radius:2px;overflow:hidden"><div style="width:33%;height:100%;background:var(--red);border-radius:2px"></div></div>
+      </div>
+    </div>
+    <div style="display:flex;align-items:center;gap:10px;margin-bottom:22px;background:rgba(255,255,255,0.03);padding:8px 16px;border-radius:8px;border:1px solid rgba(255,255,255,0.06)">
+      <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="var(--cyan)" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
+      <span style="font-size:12px;color:rgba(255,255,255,0.7);font-family:monospace">Alvo auditado: venezacontabilidade.com.br</span>
+      <span style="margin-left:auto;font-size:10px;color:rgba(255,255,255,0.3);letter-spacing:1px;text-transform:uppercase">6 falhas · 3 aprovados</span>
+    </div>
+
+    <div style="display:grid;grid-template-columns:1fr 1fr;gap:18px">
+      <!-- Reprovados -->
+      <div style="background:rgba(230,57,70,0.04);border:1px solid rgba(230,57,70,0.15);border-radius:12px;padding:20px 22px">
+        <div style="display:flex;align-items:center;gap:10px;margin-bottom:16px">
+          <div style="width:32px;height:32px;background:rgba(230,57,70,0.1);border-radius:8px;display:flex;align-items:center;justify-content:center"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="var(--red)" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="15" y1="9" x2="9" y2="15"/><line x1="9" y1="9" x2="15" y2="15"/></svg></div>
+          <div style="font-size:14px;font-weight:700;color:var(--red)">Testes Reprovados</div>
+          <span class="badge crit" style="background:rgba(230,57,70,0.15);font-size:9px;padding:3px 8px;margin-left:auto">6 FALHAS</span>
+        </div>
+        <div style="display:flex;flex-direction:column;gap:8px">
+          <div style="display:flex;justify-content:space-between;align-items:center;padding:7px 0;border-bottom:1px solid rgba(255,255,255,0.04)"><span style="font-size:12px;color:rgba(255,255,255,0.7)">Content Security Policy (CSP)</span><span style="font-size:10px;color:var(--red);font-weight:700">✕ FALHOU</span></div>
+          <div style="display:flex;justify-content:space-between;align-items:center;padding:7px 0;border-bottom:1px solid rgba(255,255,255,0.04)"><span style="font-size:12px;color:rgba(255,255,255,0.7)">Anti-CSRF Tokens</span><span style="font-size:10px;color:var(--red);font-weight:700">✕ FALHOU</span></div>
+          <div style="display:flex;justify-content:space-between;align-items:center;padding:7px 0;border-bottom:1px solid rgba(255,255,255,0.04)"><span style="font-size:12px;color:rgba(255,255,255,0.7)">Ocultação de Stack (PHP)</span><span style="font-size:10px;color:var(--red);font-weight:700">✕ FALHOU</span></div>
+          <div style="display:flex;justify-content:space-between;align-items:center;padding:7px 0;border-bottom:1px solid rgba(255,255,255,0.04)"><span style="font-size:12px;color:rgba(255,255,255,0.7)">Proteção Clickjacking</span><span style="font-size:10px;color:var(--red);font-weight:700">✕ FALHOU</span></div>
+          <div style="display:flex;justify-content:space-between;align-items:center;padding:7px 0;border-bottom:1px solid rgba(255,255,255,0.04)"><span style="font-size:12px;color:rgba(255,255,255,0.7)">Isolamento de Marca (Whitelabel)</span><span style="font-size:10px;color:var(--red);font-weight:700">✕ FALHOU</span></div>
+          <div style="display:flex;justify-content:space-between;align-items:center;padding:7px 0"><span style="font-size:12px;color:rgba(255,255,255,0.7)">Secure & HttpOnly Cookies</span><span style="font-size:10px;color:var(--red);font-weight:700">✕ FALHOU</span></div>
         </div>
       </div>
-      
-      <div class="card" style="background:#111;border:1px solid rgba(230,57,70,0.4);padding:24px;text-align:center">
-        <div style="width:56px;height:56px;background:rgba(230,57,70,0.1);border-radius:12px;display:flex;align-items:center;justify-content:center;margin:0 auto 16px">
-          <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="var(--red)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10.29 3.86L1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z"/><line x1="12" y1="9" x2="12" y2="13"/><line x1="12" y1="17" x2="12.01" y2="17"/></svg>
+      <!-- Aprovados -->
+      <div style="background:rgba(0,138,139,0.04);border:1px solid rgba(0,138,139,0.15);border-radius:12px;padding:20px 22px">
+        <div style="display:flex;align-items:center;gap:10px;margin-bottom:16px">
+          <div style="width:32px;height:32px;background:rgba(0,138,139,0.1);border-radius:8px;display:flex;align-items:center;justify-content:center"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="var(--teal)" stroke-width="2"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg></div>
+          <div style="font-size:14px;font-weight:700;color:var(--teal)">Testes Aprovados</div>
+          <span class="badge" style="background:rgba(0,138,139,0.15);color:var(--teal);font-size:9px;padding:3px 8px;border:1px solid rgba(0,138,139,0.3);margin-left:auto">3 OK</span>
         </div>
-        <div style="font-size:18px;font-weight:700;color:#fff;margin-bottom:8px">A Fraqueza do Fornecedor</div>
-        <p style="font-size:12px;color:rgba(255,255,255,0.5);line-height:1.6;margin-bottom:20px">Mesmo se o site principal for seguro, enviar os dados contábeis para um sistema frágil de terceiros mantém a empresa exposta a vazamentos.</p>
-        
-        <div style="background:rgba(255,255,255,0.04);border:1px dashed rgba(230,57,70,0.5);border-radius:6px;padding:12px">
-          <div style="font-size:10px;font-weight:700;color:var(--red);text-transform:uppercase;letter-spacing:1px;margin-bottom:4px">Nosso Padrão Matrix OS</div>
-          <div style="font-size:11px;color:rgba(255,255,255,0.7)">Construímos portais exclusivos com autenticação de nível bancário (Identity-Aware), isolamento multi-tenant e mitigação contra força bruta.</div>
+        <div style="display:flex;flex-direction:column;gap:8px">
+          <div style="display:flex;justify-content:space-between;align-items:center;padding:7px 0;border-bottom:1px solid rgba(255,255,255,0.04)"><span style="font-size:12px;color:rgba(255,255,255,0.7)">Criptografia de Transporte (HTTPS)</span><span style="font-size:10px;color:var(--teal);font-weight:700">✓ PASSOU</span></div>
+          <div style="display:flex;justify-content:space-between;align-items:center;padding:7px 0;border-bottom:1px solid rgba(255,255,255,0.04)"><span style="font-size:12px;color:rgba(255,255,255,0.7)">Certificado SSL Válido</span><span style="font-size:10px;color:var(--teal);font-weight:700">✓ PASSOU</span></div>
+          <div style="display:flex;justify-content:space-between;align-items:center;padding:7px 0"><span style="font-size:12px;color:rgba(255,255,255,0.7)">Bloqueio de Indexação de Diretórios</span><span style="font-size:10px;color:var(--teal);font-weight:700">✓ PASSOU</span></div>
+        </div>
+        <!-- Veredito -->
+        <div style="margin-top:20px;padding-top:16px;border-top:1px dashed rgba(0,138,139,0.3)">
+          <div style="font-size:10px;font-weight:700;letter-spacing:1px;text-transform:uppercase;color:var(--red);margin-bottom:6px">Veredito: Reprovado</div>
+          <div style="font-size:11px;color:rgba(255,255,255,0.5);line-height:1.5">A infraestrutura falha em <strong style="color:rgba(255,255,255,0.75)">67% dos testes de segurança</strong>. A superfície de ataque atual é inaceitável para uma empresa que custodia dados fiscais de terceiros.</div>
         </div>
       </div>
     </div>
   </div>
 </div>
 
-<!-- S19: FECHAMENTO / SERVIÇOS -->
+<!-- S19: PENTEST ÁREA DO CLIENTE -->
 <div class="slide" id="s19">
+  <div class="box" style="background:linear-gradient(135deg,#0f0f0f,#1a1a1a,#0d0d0d);border:1px solid rgba(230,57,70,0.25);color:#fff;padding:36px 48px">
+
+    <!-- Header -->
+    <div style="display:flex;align-items:flex-start;justify-content:space-between;margin-bottom:28px">
+      <div style="flex:1">
+        <div class="tag" style="background:rgba(230,57,70,0.12);color:var(--red);border-color:rgba(230,57,70,0.3);margin-bottom:14px">Pentest — Portal do Cliente</div>
+        <h2 style="color:#fff;margin-bottom:8px;font-size:clamp(20px,2.2vw,26px)">O Elo Mais Fraco da <span style="color:var(--red)">Cadeia Contábil</span></h2>
+        <p style="color:rgba(255,255,255,0.5);font-size:13px;line-height:1.5;max-width:520px;margin:0">O portal terceirizado onde clientes acessam documentos fiscais opera com falhas que transformam dados confidenciais em alvo fácil.</p>
+      </div>
+
+      <!-- Risk Score -->
+      <div style="background:rgba(230,57,70,0.06);border:1px solid rgba(230,57,70,0.25);border-radius:14px;padding:18px 24px;text-align:center;min-width:140px">
+        <div style="font-size:10px;font-weight:700;letter-spacing:1.5px;text-transform:uppercase;color:rgba(255,255,255,0.35);margin-bottom:8px">Nível de Risco</div>
+        <div style="font-size:36px;font-weight:800;color:var(--red);letter-spacing:-2px;line-height:1">8.4</div>
+        <div style="font-size:10px;color:rgba(255,255,255,0.3);margin-top:4px">/ 10 — Crítico</div>
+        <div style="margin-top:10px;height:4px;background:rgba(255,255,255,0.08);border-radius:2px;overflow:hidden">
+          <div style="width:84%;height:100%;background:linear-gradient(90deg,#ffaa00,var(--red));border-radius:2px"></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Target bar -->
+    <div style="display:flex;align-items:center;gap:10px;margin-bottom:24px;background:rgba(255,255,255,0.03);padding:8px 16px;border-radius:8px;border:1px solid rgba(255,255,255,0.06)">
+      <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="var(--cyan)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><line x1="2" y1="12" x2="22" y2="12"></line><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path></svg>
+      <span style="font-size:12px;color:rgba(255,255,255,0.7);font-family:monospace">Alvo auditado: mpmsistema.com.br/cliente</span>
+      <span style="margin-left:auto;font-size:10px;color:rgba(255,255,255,0.3);letter-spacing:1px;text-transform:uppercase">Dados contábeis de terceiros</span>
+    </div>
+
+    <!-- 4 Vulnerability Cards — clean horizontal grid -->
+    <div style="display:grid;grid-template-columns:repeat(4,1fr);gap:14px;margin-bottom:20px">
+
+      <!-- Card 1: CSRF -->
+      <div style="background:rgba(255,255,255,0.025);border:1px solid rgba(255,255,255,0.07);border-radius:10px;padding:18px 16px;position:relative;overflow:hidden">
+        <div style="position:absolute;top:0;left:0;right:0;height:3px;background:linear-gradient(90deg,var(--red),rgba(230,57,70,0.3))"></div>
+        <div style="display:flex;align-items:center;gap:8px;margin-bottom:12px">
+          <div style="width:32px;height:32px;background:rgba(230,57,70,0.1);border-radius:8px;display:flex;align-items:center;justify-content:center;flex-shrink:0">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="var(--red)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><line x1="9" y1="9" x2="15" y2="15"/><line x1="15" y1="9" x2="9" y2="15"/></svg>
+          </div>
+          <span class="badge crit" style="background:rgba(230,57,70,0.15);font-size:9px;padding:3px 7px">CRÍTICO</span>
+        </div>
+        <div style="font-size:13px;font-weight:700;color:#fff;margin-bottom:6px;line-height:1.3">Ausência de Anti-CSRF</div>
+        <div style="font-size:11px;color:rgba(255,255,255,0.45);line-height:1.5">Login sem token de estado. Permite falsificação de requisições autenticadas e Account Takeover invisível.</div>
+      </div>
+
+      <!-- Card 2: Brute Force -->
+      <div style="background:rgba(255,255,255,0.025);border:1px solid rgba(255,255,255,0.07);border-radius:10px;padding:18px 16px;position:relative;overflow:hidden">
+        <div style="position:absolute;top:0;left:0;right:0;height:3px;background:linear-gradient(90deg,var(--red),rgba(230,57,70,0.3))"></div>
+        <div style="display:flex;align-items:center;gap:8px;margin-bottom:12px">
+          <div style="width:32px;height:32px;background:rgba(230,57,70,0.1);border-radius:8px;display:flex;align-items:center;justify-content:center;flex-shrink:0">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="var(--red)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"/><path d="M7 11V7a5 5 0 0 1 9.9-1"/></svg>
+          </div>
+          <span class="badge crit" style="background:rgba(230,57,70,0.15);font-size:9px;padding:3px 7px">CRÍTICO</span>
+        </div>
+        <div style="font-size:13px;font-weight:700;color:#fff;margin-bottom:6px;line-height:1.3">Sem Proteção Brute-Force</div>
+        <div style="font-size:11px;color:rgba(255,255,255,0.45);line-height:1.5">Zero Rate Limiting e CAPTCHA. Desprotegido contra Credential Stuffing e ataques de dicionário massivos.</div>
+      </div>
+
+      <!-- Card 3: Session -->
+      <div style="background:rgba(255,255,255,0.025);border:1px solid rgba(255,255,255,0.07);border-radius:10px;padding:18px 16px;position:relative;overflow:hidden">
+        <div style="position:absolute;top:0;left:0;right:0;height:3px;background:linear-gradient(90deg,#ffaa00,rgba(255,170,0,0.3))"></div>
+        <div style="display:flex;align-items:center;gap:8px;margin-bottom:12px">
+          <div style="width:32px;height:32px;background:rgba(255,170,0,0.1);border-radius:8px;display:flex;align-items:center;justify-content:center;flex-shrink:0">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#ffaa00" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/><circle cx="12" cy="12" r="3"/></svg>
+          </div>
+          <span class="badge warn" style="background:rgba(255,170,0,0.12);color:#ffaa00;font-size:9px;padding:3px 7px">MÉDIO</span>
+        </div>
+        <div style="font-size:13px;font-weight:700;color:#fff;margin-bottom:6px;line-height:1.3">Sessão Insegura</div>
+        <div style="font-size:11px;color:rgba(255,255,255,0.45);line-height:1.5">Cookies sem flags Secure/HttpOnly. Vulnerável a interceptação MITM em Wi-Fi e extração via XSS.</div>
+      </div>
+
+      <!-- Card 4: Clickjacking -->
+      <div style="background:rgba(255,255,255,0.025);border:1px solid rgba(255,255,255,0.07);border-radius:10px;padding:18px 16px;position:relative;overflow:hidden">
+        <div style="position:absolute;top:0;left:0;right:0;height:3px;background:linear-gradient(90deg,#ffaa00,rgba(255,170,0,0.3))"></div>
+        <div style="display:flex;align-items:center;gap:8px;margin-bottom:12px">
+          <div style="width:32px;height:32px;background:rgba(255,170,0,0.1);border-radius:8px;display:flex;align-items:center;justify-content:center;flex-shrink:0">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#ffaa00" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3" width="20" height="14" rx="2" ry="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg>
+          </div>
+          <span class="badge warn" style="background:rgba(255,170,0,0.12);color:#ffaa00;font-size:9px;padding:3px 7px">MÉDIO</span>
+        </div>
+        <div style="font-size:13px;font-weight:700;color:#fff;margin-bottom:6px;line-height:1.3">Clickjacking Ativo</div>
+        <div style="font-size:11px;color:rgba(255,255,255,0.45);line-height:1.5">Sem X-Frame-Options. Login pode ser embutido em iframe invisível para sequestro de credenciais.</div>
+      </div>
+
+    </div>
+
+    <!-- Bottom: Vendor Risk + Matrix Solution -->
+    <div style="display:grid;grid-template-columns:1fr 1fr;gap:16px">
+
+      <!-- Vendor Risk -->
+      <div style="background:rgba(230,57,70,0.04);border:1px solid rgba(230,57,70,0.2);border-radius:10px;padding:18px 22px;display:flex;gap:16px;align-items:center">
+        <div style="width:44px;height:44px;background:rgba(230,57,70,0.1);border-radius:10px;display:flex;align-items:center;justify-content:center;flex-shrink:0">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="var(--red)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10.29 3.86L1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z"/><line x1="12" y1="9" x2="12" y2="13"/><line x1="12" y1="17" x2="12.01" y2="17"/></svg>
+        </div>
+        <div>
+          <div style="font-size:13px;font-weight:700;color:var(--red);margin-bottom:4px">Risco do Fornecedor Terceirizado</div>
+          <div style="font-size:11px;color:rgba(255,255,255,0.5);line-height:1.5">Mesmo com o site principal seguro, delegar dados contábeis a um sistema frágil mantém a empresa em <strong style="color:rgba(255,255,255,0.75)">violação permanente da LGPD</strong>.</div>
+        </div>
+      </div>
+
+      <!-- Matrix Solution -->
+      <div style="background:rgba(0,138,139,0.04);border:1px solid rgba(0,138,139,0.2);border-radius:10px;padding:18px 22px;display:flex;gap:16px;align-items:center">
+        <div style="width:44px;height:44px;background:rgba(0,138,139,0.1);border-radius:10px;display:flex;align-items:center;justify-content:center;flex-shrink:0">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="var(--teal)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><polyline points="9 12 11 14 15 10"/></svg>
+        </div>
+        <div>
+          <div style="font-size:13px;font-weight:700;color:var(--teal);margin-bottom:4px">Padrão Matrix OS</div>
+          <div style="font-size:11px;color:rgba(255,255,255,0.5);line-height:1.5">Portais exclusivos com <strong style="color:rgba(255,255,255,0.75)">autenticação bancária</strong>, isolamento multi-tenant, rate limiting e blindagem anti-CSRF nativa.</div>
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+</div>
+
+<!-- S20: FECHAMENTO / SERVIÇOS -->
+<div class="slide" id="s20">
   <div class="box" style="background:linear-gradient(135deg,#1a1a1a,#0d0d0d);border:1px solid rgba(255,255,255,0.06);display:flex;flex-direction:column;align-items:center;justify-content:center;padding:32px 80px">
     <div style="display:flex;flex-direction:column;align-items:center;margin-bottom:32px">
       <svg viewBox="0 0 120 120" style="width:72px;height:72px;margin-bottom:16px;overflow:visible">
@@ -1343,7 +1474,7 @@ ul.lst li::before{content:'—';color:var(--muted);flex-shrink:0}
    OSCHIN PITCH DECK — NAVIGATION ENGINE
    ============================================ */
 
-const N = 20;
+const N = 21;
 let cur = 0;
 const slides = document.querySelectorAll('.slide');
 const dots = document.getElementById('dots');
